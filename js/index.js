@@ -12,12 +12,12 @@ const firstHeader = document.querySelector('.text-content h2');
 const firstSection = document.querySelector('section');
 
 ///event listners
-//mouseover
+
 navLogo.addEventListener("mouseover", function(event){
     this.MSFIDOCredentialAssertion.add('nav-logo-border')
 });
 
-/// keydown
+
 navLogo.addEventListener('mouseleave', function() {
     this.classList.remove('nav-logo-border');
 
@@ -25,7 +25,7 @@ navLogo.addEventListener('mouseleave', function() {
 
 
 
-//  wheel
+
 window.addEventListener('wheel', function() {
     if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
         navLogo.style.display = 'none';
