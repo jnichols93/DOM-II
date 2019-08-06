@@ -13,12 +13,12 @@ const firstSection = document.querySelector('section');
 
 ///event listners
 
-navLogo.addEventListener("mouseover", function(event){
-    this.MSFIDOCredentialAssertion.add('nav-logo-border')
+navLogo.addEventListener("mouseenter", function(e) {
+    this.classList.add('nav-logo-border')
+
 });
 
-
-navLogo.addEventListener('mouseleave', function() {
+navLogo.addEventListener("mouseleave", function() {
     this.classList.remove('nav-logo-border');
 
 });
@@ -80,6 +80,16 @@ buttons.forEach(function(x) {
 
 
 images[2].addEventListener('mousedown', function() {
-    alert('What a pretty place! Don\'t you wish you were there?');
+    alert('visit today Don\'t you wish you were there?');
+})
+navLinks.forEach(function(links) {
+    links.addEventListener('click', function(event) {
+        event.preventDefault();
+    })
+})
+
+firstHeader.addEventListener('click', function(event) {
+    alert("This event won't propagate.");
+    event.stopPropagation();
 })
 
