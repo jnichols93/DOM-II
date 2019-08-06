@@ -45,3 +45,41 @@ for (let i = 0; i < navLinks.length; i++) {
         this.style.color = "DarkTurquoise";
     });
 };
+
+for (let i = 0; i < navLinks.length; i++) {
+    navLinks[i].addEventListener('dblclick', function() {
+        this.style.color = '#212529';
+    });
+};
+
+window.addEventListener('resize', function() {
+    topNav.style.backgroundColor = '#17A2B8';
+})
+
+for (let i = 0; i < images.length; i++) {
+    images[i].addEventListener('dragstart', function() {
+        for (let j = 0; j < paragraphs.length; j++) {
+            paragraphs[j].style.color = '#17A2B8';
+        }
+    })
+}
+
+for (let i = 0; i < images.length; i++) {
+    images[i].addEventListener('dragend', function() {
+        for (let j = 0; j < paragraphs.length; j++) {
+            paragraphs[j].style.color = '#212529';
+        }
+    })
+}
+
+buttons.forEach(function(x) {
+    x.addEventListener('click', function() {
+        alert('Sorry, that page is under construction. Check back soon!');
+    })
+});
+
+
+images[2].addEventListener('mousedown', function() {
+    alert('What a pretty place! Don\'t you wish you were there?');
+})
+
