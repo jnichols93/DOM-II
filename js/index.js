@@ -1,6 +1,7 @@
 // Your code goes here
 const navLogo = document.querySelector('logo-heading');
-const container = document.querySelector('.container')
+const container = document.querySelector('.container');
+const intro = document.querySelector('.intro');
 const navMain = document.querySelector('.nav-container');
 const wholePage = document.querySelector('body');
 const navLinks = document.querySelectorAll('.nav-link');
@@ -99,3 +100,7 @@ firstSection.addEventListener('click', function() {
 firstSection.addEventListener('dblclick', function() {
     this.style.cssText = '';
 })
+intro.addEventListener('select', (event) => {
+   
+
+ });
