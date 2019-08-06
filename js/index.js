@@ -13,7 +13,7 @@ const firstSection = document.querySelector('section');
 
 ///event listners
 
-navLogo.addEventListener("mouseenter", function (e) {
+navLogo.addEventListener("mouseenter", function () {
     this.classList.add('nav-logo-border');
 
 });
