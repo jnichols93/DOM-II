@@ -36,10 +36,12 @@ window.addEventListener('wheel', function() {
     }
 })
 
-//  drag / drop
-//  load
-//  focus
-//  resize
-//  scroll
-//  select
-//  dblclick
+window.addEventListener('load', function() {
+    this.alert('Welcome to the Fun Bus!');
+})
+
+for (let i = 0; i < navLinks.length; i++) {
+    navLinks[i].addEventListener('click', function() {
+        this.style.color = "DarkTurquoise";
+    });
+};
