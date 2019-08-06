@@ -13,8 +13,8 @@ const firstSection = document.querySelector('section');
 
 ///event listners
 
-navLogo.addEventListener("mouseenter", function(e) {
-    this.classList.add('nav-logo-border')
+navLogo.addEventListener("mouseenter", function (e) {
+    this.classList.add('nav-logo-border');
 
 });
 
@@ -92,4 +92,10 @@ firstHeader.addEventListener('click', function(event) {
     alert("This event won't propagate.");
     event.stopPropagation();
 })
+firstSection.addEventListener('click', function() {
+    this.style.backgroundColor = 'aqua';
+})
 
+firstSection.addEventListener('dblclick', function() {
+    this.style.cssText = '';
+})
